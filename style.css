@@ -1,0 +1,154 @@
+@font-face {
+  font-family: 'Gilroy';
+  src:  url('/assets/fonts/gilroy.woff') format('woff2'),
+        url('/assets/fonts/gilroy2.woff2') format('woff');
+}
+
+@font-face {
+  font-family: 'Gilroy-bold';
+  src:  url('/assets/fonts/gilroyextrabold.woff') format('woff2'),
+        url('/assets/fonts/gilroyextrabold2.woff2') format('woff');
+}
+
+body {
+  font-family: Gilroy;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+.navbar {
+ 
+  font-size: 20px;
+}
+
+.bg-custom {
+  background-color: #23272D;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+ul li {
+  padding-left: 50px;
+}
+
+.nav-right {
+  float: right;
+}
+
+.mxw-s {
+  max-width: 540px
+}
+.mxw-m {
+  max-width: 720px
+}
+.mxw-l {
+  max-width: 960px
+}
+.mxw-xl {
+  max-width: 1140px
+}
+
+
+
+.first {
+  background-image: url('/assets/images/Component.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 104%;
+}
+
+
+.sign, .signnav {
+  border: 1px solid #c62c32;
+  background-color: #c62c32;
+  border-radius: 20px;
+  padding: 10px 70px;
+  color: white;
+  text-align: center;
+}
+
+.nosign {
+  display: none;
+}
+
+.imgsp {
+  display: none;
+}
+
+.fz30 {
+  font-size: 30px;
+}
+
+.footer {
+  background-color: #23272D;
+  border: 1px solid #23272D;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.bgdark {
+  background-color: #23272D;
+}
+
+.rb {
+  border: 4px solid #c62c32;
+  height: 200px;
+}
+
+.btb {
+  border-top: 1px solid #707070;
+}
+
+.linesp {
+  display: none;
+  width: 15px;
+  margin-top: -25px;
+}
+
+.fs {
+  font-size: 24px;
+}
+
+.ellipse {
+  height: 15px;
+  width: 15px;
+}
+
+
+
+
+@media only screen and (max-width: 767px) {
+  .first {
+    background-image: none;
+    text-align: center;
+  }
+  .imgsp {
+    display: block;
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .signnav {
+    display: none;
+  }
+  .nosign {
+    display: block;
+  }
+  .footer {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .linesp {
+    display: block;
+  }
+  .linepc {
+    display: none;
+  }
+}
